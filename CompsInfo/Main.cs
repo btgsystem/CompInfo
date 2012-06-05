@@ -16,7 +16,7 @@ using System.Data.SqlClient;
 using DevExpress.XtraEditors;
 using System.Text.RegularExpressions;
 using DevExpress.XtraEditors.Repository;
-
+using System.Collections.ObjectModel;
 
 namespace CompsInfo
 {
