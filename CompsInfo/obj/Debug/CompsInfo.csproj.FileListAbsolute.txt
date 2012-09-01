@@ -1,0 +1,10 @@
+C:\Users\Temain\Documents\Visual Studio 2012\Projects\CompsInfo\CompsInfo\bin\Debug\CompsInfo.exe
+C:\Users\Temain\Documents\Visual Studio 2012\Projects\CompsInfo\CompsInfo\bin\Debug\CompsInfo.pdb
+C:\Users\Temain\Documents\Visual Studio 2012\Projects\CompsInfo\CompsInfo\obj\Debug\CompsInfo.Main.resources
+C:\Users\Temain\Documents\Visual Studio 2012\Projects\CompsInfo\CompsInfo\obj\Debug\CompsInfo.Properties.Resources.resources
+C:\Users\Temain\Documents\Visual Studio 2012\Projects\CompsInfo\CompsInfo\obj\Debug\CompsInfo.csproj.GenerateResource.Cache
+C:\Users\Temain\Documents\Visual Studio 2012\Projects\CompsInfo\CompsInfo\obj\Debug\CompsInfo.exe.licenses
+C:\Users\Temain\Documents\Visual Studio 2012\Projects\CompsInfo\CompsInfo\obj\Debug\CompsInfo.exe
+C:\Users\Temain\Documents\Visual Studio 2012\Projects\CompsInfo\CompsInfo\obj\Debug\CompsInfo.pdb
+C:\Users\Temain\Documents\Visual Studio 2012\Projects\CompsInfo\CompsInfo\obj\Debug\CompsInfo.csprojResolveAssemblyReference.cache
+C:\Users\Temain\Documents\Visual Studio 2012\Projects\CompsInfo\CompsInfo\obj\Debug\CompsInfo.SplashScreen1.resources
