@@ -41,7 +41,6 @@ namespace CompsInfo
         {
             SkinHelper.InitSkinGallery(rgbiSkins, true);
         }
-
         private void Open_ItemClick(object sender, ItemClickEventArgs e)
         {
             Stream myStream = null;
@@ -71,7 +70,6 @@ namespace CompsInfo
                 }
             }
         }
-
         //------------------------------Чтение файла-----------------------------------
         private void ReadFile(StreamReader sr,string fName)
         {
@@ -86,7 +84,6 @@ namespace CompsInfo
             splitFile = fileName.Split('-');
             SaveInDB(splitTxt, splitFile[0], ValidationAud(splitFile[1]), ValidationInv(splitFile[2].Replace(".txt", "")));
         }
-
         //-----------------------Валидация аудитории---(всегда 000х)-------------------
         private string ValidationAud(string aud)
         {
@@ -129,7 +126,6 @@ namespace CompsInfo
             }
             return aud;
         }
-
         //-----------------------Валидация инвентарника------------------------------
         private string ValidationInv(string invent)
         {
@@ -147,7 +143,6 @@ namespace CompsInfo
                 return "00x0000000E";
             }
         }
-
         //------------------------------Сохранение в бд------------------------------
         private void SaveInDB(string[] splitTxt, string korp, string aud, string invent)
         {
@@ -251,7 +246,6 @@ namespace CompsInfo
                 _connect.Close();
             }
         }
-
         //------------------------Проверка на наличие записи в базе------------------
         private bool CheckComps(string invent,string MAC)
         {
@@ -271,7 +265,6 @@ namespace CompsInfo
                 return true;
             }
         }
-
         private void Main_Load(object sender, EventArgs e)
         {
             try
@@ -287,7 +280,6 @@ namespace CompsInfo
                 XtraMessageBox.Show(msg.ToString());
             }
         }
-
         //-------------------------Получение id из экспликации----------------------
         private int GetExplId(string aud,string korp)
         {
@@ -322,7 +314,6 @@ namespace CompsInfo
             _connect.Close();
             return result;
         }
-
         //----------------------------Чтение всех файлов в папке--------------------
         private void iSave_ItemClick(object sender, ItemClickEventArgs e)
         {
@@ -356,7 +347,6 @@ namespace CompsInfo
                 }
             }
         }
-
         private bool UpdateExpl(int korp,int podr,int id)
         {
             int f = 0;
@@ -377,7 +367,6 @@ namespace CompsInfo
                     return false;
             }          
         }
-
         private void GetInfoExpl()
         {
             int korp, podr, id, count=0;
@@ -403,7 +392,6 @@ namespace CompsInfo
             }
             XtraMessageBox.Show(String.Format("Обновлено {0} строк!",count.ToString()));
         }
-
         //----------------------------начальное заполнение комбобоксов---------------------
         private void FillDataSet(string tableName, RepositoryItemLookUpEdit repository)
         {
@@ -422,7 +410,6 @@ namespace CompsInfo
                 repository.ValueMember = "Id";  
             }
         }
-
         private void KorpusComboBox_EditValueChanged(object sender, EventArgs e)
         {
             flag1 = true;
@@ -442,7 +429,6 @@ namespace CompsInfo
                 FillDataSet("Podrs", PodrsRepository);
             }
         }
-
         private void PodrComboBox_EditValueChanged(object sender, EventArgs e)
         {
             flag2 = true;
@@ -461,7 +447,6 @@ namespace CompsInfo
                 FillDataSet("Podrs", PodrsRepository);
             }
         }
-
         //-----------------------заполнение комбобокса по ключу-----------------------------
         private void FillPodrsOrKorps(string korp,string selectKey,string whereKey,string tableName, RepositoryItemLookUpEdit repository)
         {
@@ -498,7 +483,6 @@ namespace CompsInfo
             repository.DisplayMember = "name";
             repository.ValueMember = "Id";
         }
-
         //-----------------------------заполнение комбобокса аудиторий--------------------
         private void FillAudCombo(string korp,string wherePodr)//-----------------по корпусу
         {
@@ -517,7 +501,6 @@ namespace CompsInfo
                 AudsRepository.ValueMember = "Id";
             }
         }
-
         //-----------------------------проверка выбора в комбо---------------------------
         private bool CheckFlag()
         {
@@ -529,7 +512,6 @@ namespace CompsInfo
             }
             else return true;
         }
-
         //-----------------------------заполнение грида----------------------------------
         private void FillGridBy(string ExplQuery)
         {
@@ -561,7 +543,6 @@ namespace CompsInfo
                 XtraMessageBox.Show(msg.ToString());
             }
         }
-
         //-----------------------получение Id из Expl по корпусу и подразделению---------
         private void GetExplIds(string query)
         {
@@ -577,7 +558,6 @@ namespace CompsInfo
                 _connect.Close();
             }
         }     
-
         //-----------------------вывод всего---------------------------------------------
         private void UpdateGrid()
         {
@@ -596,13 +576,11 @@ namespace CompsInfo
                 gridView1.GroupPanelText = "Выберите компьютер";
             }
         }
-
         //------------------------вывод всех данных--------------------------------------
         private void barButtonItem1_ItemClick(object sender, ItemClickEventArgs e)
         {
             UpdateGrid();
         }
-
         //-------------------------------Поиск по инвентернику---------------------------
         private void barButtonItem2_ItemClick(object sender, ItemClickEventArgs e)
         {        
@@ -622,7 +600,6 @@ namespace CompsInfo
                 gridView1.GroupPanelText = "Выберите компьютер";
             }
         }
-
         private void gridView1_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
         {
 

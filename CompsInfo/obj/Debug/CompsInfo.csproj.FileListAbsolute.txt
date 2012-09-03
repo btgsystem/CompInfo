@@ -10,3 +10,5 @@ C:\Users\Temain\Documents\Visual Studio 2012\Projects\CompsInfo\CompsInfo\obj\De
 C:\Users\Temain\Documents\Visual Studio 2012\Projects\CompsInfo\CompsInfo\obj\Debug\CompsInfo.SplashScreen1.resources
 C:\Users\Temain\Documents\GitHub\CompInfo\CompsInfo\obj\Debug\CompsInfo.exe
 C:\Users\Temain\Documents\GitHub\CompInfo\CompsInfo\obj\Debug\CompsInfo.pdb
+C:\Users\Admin\Documents\GitHub\CompInfo\CompsInfo\obj\Debug\CompsInfo.exe
+C:\Users\Admin\Documents\GitHub\CompInfo\CompsInfo\obj\Debug\CompsInfo.pdb
